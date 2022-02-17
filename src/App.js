@@ -1,22 +1,16 @@
-import logo from './logo.svg';
+// import { MyResponsiveGrid } from './MyResponsiveGrid';
+import ReactGridLayout, { WidthProvider } from "react-grid-layout";
+
 import './App.css';
+import { MyFirstGrid } from './MyFirstGrid';
 
 function App() {
+  const GridLayout = WidthProvider(ReactGridLayout);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+<MyFirstGrid/>
       </header>
     </div>
   );
